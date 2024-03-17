@@ -9,10 +9,8 @@ const inter = Inter({ subsets: ["latin"] });
 
 export default function RootLayout({
   children,
-  router,
 }: Readonly<{
   children: React.ReactNode;
-  router: any;
 }>) {
   const bodyRef = useRef<HTMLBodyElement | null>(null);
   useEffect(() => {
@@ -25,7 +23,7 @@ export default function RootLayout({
         cursor.style.top = `${e.clientY}px`;
       });
     }
-  }, [bodyRef.current]);
+  }, []);
   return (
     <html lang="en">
       <body ref={bodyRef} className={inter.className}>

@@ -6,7 +6,7 @@ import axios from 'axios';
 import { ToastContainer, toast } from 'react-toastify';
 import "react-toastify/dist/ReactToastify.css";
 
-function page() {
+function Page() {
   const [isOn, setOn] = useState(false);
   const checkRef = useRef<HTMLInputElement>(null);
   useEffect(() => {
@@ -126,4 +126,4 @@ function page() {
   )
 }
 
-export default page
+export default Page

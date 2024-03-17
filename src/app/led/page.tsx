@@ -7,7 +7,7 @@ import axios from "axios";
 import { ToastContainer, toast } from "react-toastify";
 import "react-toastify/dist/ReactToastify.css";
 
-export default function () {
+function Page () {
   const [color, setColor] = useState<RgbColor>({
     r: 255,
     g: 255,
@@ -185,3 +185,4 @@ export default function () {
   );
 }
 
+export default Page;
