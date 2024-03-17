@@ -1,0 +1,121 @@
+
+.container{
+    display:flex;
+}
+
+.statuscontainer{
+    display: flex;
+    width: 70%;
+    height: 100vh;
+    flex-direction: column;
+}
+
+.designcontainer{
+    display: flex;
+    width: 30%;
+    height: 100vh;
+    background: radial-gradient(circle, white 0%, rgba(0,0,0,1) 49%, rgba(0,0,0,1) 100%);
+    padding-left: 5%;
+    padding-top: 6%;
+}
+
+.off__design__container {
+    display: flex;
+    width: 30%;
+    height: 100vh;
+    padding-left: 5%;
+    padding-top: 6%;
+}
+
+.switch {
+    position: relative;
+    display: inline-block;
+    width: 60px;
+    height: 34px;
+  }
+  
+  /* Hide default HTML checkbox */
+  .switch input {
+    opacity: 0;
+    width: 0;
+    height: 0;
+  }
+  
+  .slider {
+    position: absolute;
+    cursor: pointer;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: #FF0800;
+    -webkit-transition: .4s;
+    transition: .4s;
+    border-radius: 34px;
+  }
+  
+  .slider:before {
+    position: absolute;
+    content: "";
+    height: 26px;
+    width: 26px;
+    left: 4px;
+    bottom: 4px;
+    background-color: white;
+    -webkit-transition: .4s;
+    transition: .4s;
+    border-radius: 50%;
+  }
+  
+  input:checked + .slider {
+    background-color: #07da63;
+  }
+  
+  input:focus + .slider {
+    box-shadow: 0 0 1px #07da63;
+  }
+  
+  input:checked + .slider:before {
+    -webkit-transform: translateX(26px);
+    -ms-transform: translateX(26px);
+    transform: translateX(26px);
+  }
+
+  .heading{
+    display: flex;
+    width:100%;
+    height:30%;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .toggle{
+    display: flex;
+    width: 100%;
+    height: 30%;
+    justify-content: center;
+    align-items: center;
+  }
+
+.title{
+    font-size: 3rem;    
+}
+
+.status{
+    display: flex;
+    width: 100%;
+    height: 40%;
+    justify-content: center;
+
+}
+
+.status h1{
+    font-size: 1.8rem;
+    padding-top: 8%;
+}
+
+.status h2{
+    font-size: 1.5rem;
+    padding-left: 28%;
+}
+ 
