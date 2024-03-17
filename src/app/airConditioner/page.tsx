@@ -6,7 +6,7 @@ import axios from 'axios'
 import { ToastContainer, toast } from 'react-toastify'
 import "react-toastify/dist/ReactToastify.css";
 
-const page = () => {
+const Page = () => {
     const [toggle,setToggle] = useState('/bulbasaur.gif');
     const checkRef = useRef<HTMLInputElement>(null);
     const [number,setNumber] = useState(16);
