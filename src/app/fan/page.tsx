@@ -158,6 +158,7 @@ const Page = () => {
                 toast("internal server error", {
                   type: "error"
                 });
+
               }
             }}>+</button>
             <button className="p-5 bg-red-500" onClick={async () => {

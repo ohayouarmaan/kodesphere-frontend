@@ -6,8 +6,8 @@ import axios from 'axios'
 import { ToastContainer, toast } from 'react-toastify'
 import "react-toastify/dist/ReactToastify.css";
 
-const Page = () => {
-    const [toggle,setToggle] = useState('/bulbasaur1.png');
+const page = () => {
+    const [toggle,setToggle] = useState('/bulbasaur.gif');
     const checkRef = useRef<HTMLInputElement>(null);
     const [number,setNumber] = useState(16);
     useEffect(() => {
@@ -143,7 +143,15 @@ const Page = () => {
           </div>
         </div>
         <div className={styles.acContainer}>
-            <Image className={styles.acImage} src="/acpic.png" alt='ac.png' height={100} width={200} />
+            <Image className={styles.acImage} src={toggle != "/bulbasaur1.png" ? "/Acper.gif" : "/ac.png"} alt='ac.png' height={300} width={200} />
+            {
+                toggle != "/bulbasaur1.png" ?
+                <div className='rotate__wind'>
+                    <Image src={"/wind.gif"} width={300} height={300} alt='wind'/>
+                    </div>
+                :
+                <></>
+            }
         </div>  
         <ToastContainer />
     </div>
