@@ -1,3 +1,4 @@
+
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
@@ -8,6 +9,39 @@
   --background-end-rgb: 255, 255, 255;
 }
 
+@font-face {
+  font-family: Jogan;
+  src: url("/JoganSoft-rgwKy.otf") format("opentype");
+}
+
+.logo-font {
+  font-family: Jogan;
+}
+
+body {
+  height: 100vh;
+}
+
+.logo-animation {
+  background-size: 300%;
+  -webkit-animation: animatedgradient 6s ease infinite alternate;
+  -moz-animation: animatedgradient 6s ease infinite alternate;
+  animation: animatedgradient 4s ease infinite alternate;
+
+}
+
+@keyframes animatedgradient {
+  0% {
+    background-position: 0% 50%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+  100% {
+    background-position: 0% 50%;
+  }
+}
+
 @media (prefers-color-scheme: dark) {
   :root {
     --foreground-rgb: 255, 255, 255;
@@ -15,6 +49,38 @@
     --background-end-rgb: 0, 0, 0;
   }
 }
+
+.cursor {
+  position: absolute;
+  width: 50px;
+  height: 50px;
+  background: rgb(233,27,239);
+  background: linear-gradient(45deg, rgba(233,27,239,1) 0%, rgba(163,28,224,1) 49%, rgba(195,33,200,1) 75%, rgba(94,16,130,1) 100%);
+  border-radius: 50%;
+  z-index: 100;
+  transform: translate(-50%, -50%);
+  pointer-events: none;
+}
+
+.bolder-navbar {
+  font-weight: 100;
+
+}
+
+.cursor_container {
+  position: relative;
+  height: 100%;
+}
+
+body * {
+  z-index: 201;
+  font-family: Jogan;
+}
+
+body {
+  overflow: hidden;
+}
+
 
 body {
   color: rgb(var(--foreground-rgb));
