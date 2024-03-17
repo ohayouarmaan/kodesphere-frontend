@@ -44,7 +44,7 @@ export default function Home() {
             </span>
           </h2>
           <p className={`m-0 max-w-[30ch] logo-font text-sm opacity-50`}>
-            Control the Fan using this.
+            Control the Bulb using this.
           </p>
         </Link>
 
