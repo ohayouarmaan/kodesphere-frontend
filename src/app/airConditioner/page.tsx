@@ -6,7 +6,7 @@ import axios from 'axios'
 import { ToastContainer, toast } from 'react-toastify'
 import "react-toastify/dist/ReactToastify.css";
 
-const page = () => {
+const Page = () => {
     const [toggle,setToggle] = useState('/bulbasaur1.png');
     const checkRef = useRef<HTMLInputElement>(null);
     const [number,setNumber] = useState(16);
@@ -150,4 +150,4 @@ const page = () => {
   )
 }
 
-export default page
+export default Page
