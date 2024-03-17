@@ -81,6 +81,10 @@ body {
   overflow: hidden;
 }
 
+.rotate__wind img {
+  transform: rotateX(180deg);
+}
+
 
 body {
   color: rgb(var(--foreground-rgb));
